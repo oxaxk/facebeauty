@@ -20,7 +20,7 @@ export default function AboutSection() {
               </p>
               
               <p className="text-lg leading-relaxed">
-                Jede Behandlung erfolgt in ruhiger Atmosphäre – mit Zeit für Analyse, Beratung und Formaufbau. Mehrere Artists sprechen Deutsch, Russisch und Englisch.
+                Jede Behandlung erfolgt in ruhiger Atmosphäre – mit Zeit für Analyse, Beratung und Formaufbau.
               </p>
             </div>
             
