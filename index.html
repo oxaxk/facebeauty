@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FACE BEAUTY BERLIN – Lippenunterspritzung & Russian Lips in Berlin</title>
+    <meta name="description" content="FACE BEAUTY BERLIN – Spezialisierte Praxis für Lippenunterspritzung, Russian Lips & Korrekturen in Berlin. Natürliche, feminine Ergebnisse mit hochwertigen Fillern. Jetzt Termin via WhatsApp anfragen." />
+    <meta name="keywords" content="Lippenunterspritzung Berlin, Russian Lips Berlin, Lip Filler Berlin, Hyaluron Lippen Berlin, Lip Augmentation Berlin" />
+    <link rel="canonical" href="https://facebeauty-berlin.com/" />
+    <meta name="last-modified" content="2024-01-15" />
+    
+    <!-- Social Media Tags -->
+    <meta property="og:title" content="FACE BEAUTY BERLIN – Lippenunterspritzung in Berlin" />
+    <meta property="og:description" content="Lippenunterspritzung, Russian Lips & Korrekturen mit natürlich wirkenden Ergebnissen in Berlin." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://facebeauty-berlin.com/" />
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="DE-BE" />
+    <meta name="geo.placename" content="Berlin-Mitte" />
+    <meta name="geo.position" content="52.5420;13.3920" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome and Remix Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "FACE BEAUTY BERLIN",
+      "description": "Spezialisierte Praxis für Lippenunterspritzung, Russian Lips & Korrekturen in Berlin",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Brunnenstraße 55",
+        "addressLocality": "Berlin",
+        "addressRegion": "Berlin",
+        "postalCode": "13355",
+        "addressCountry": "DE"
+      },
+      "openingHours": "Mo-Sa 10:00-18:00",
+      "priceRange": "€€€"
+    }
+    </script>
+  </head>
+  <body>
+    <div id="password-gate" style="position:fixed;top:0;left:0;width:100%;height:100%;background:white;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;">
+      <h2 style="font-family:'Inter',sans-serif;margin-bottom:1rem;">Bitte Passwort eingeben</h2>
+      <input id="passInput" type="password" placeholder="Passwort" style="padding:0.5rem 1rem;border:1px solid #ccc;border-radius:6px;font-size:1rem;">
+      <button onclick="checkPass()" style="margin-top:1rem;padding:0.5rem 1rem;border:none;background-color:#4A331F;color:white;border-radius:6px;cursor:pointer;">Weiter</button>
+      <p id="errorMsg" style="color:red;display:none;margin-top:0.5rem;">Falsches Passwort</p>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      const CORRECT_PASS = "FACE2025"; // <-- dein Passwort
+      function checkPass() {
+        const input = document.getElementById('passInput').value;
+        if (input === CORRECT_PASS) {
+          document.getElementById('password-gate').style.display = 'none';
+          document.getElementById('root').style.display = 'block';
+        } else {
+          document.getElementById('errorMsg').style.display = 'block';
+        }
+      }
+      document.getElementById('root').style.display = 'none';
+    </script>
+  </body>
+</html>
